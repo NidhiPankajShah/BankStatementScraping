@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "sideMenu.html" %}
+<head>
+  <title>Expenses</title>
+  <style>
+#leftside
+{
+margin-left: 500px;
+}
+</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="leftside">  
+<div class="container">
+  <h2>You have spent:</h2>
+  <button type="button" class="btn btn-primary">Your expenditure <span class="badge">${{amount}}</span></button>
+         
+</div>
+</div>
+</body>
+</html>

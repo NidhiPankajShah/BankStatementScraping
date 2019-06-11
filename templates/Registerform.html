@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Forms</title>
+</head>
+<body>
+<h1>Monthly expense</h1>
+<form method='POST' action={{url_for('form')}}>
+{{form.csrf_token}}
+{{form.username.label}}
+{{form.username}}
+{{form.password.label}}
+{{form.password}}
+{{form.email.label}}
+{{form.email}}
+<input type="submit">
+</form>
+</body>
+</html>

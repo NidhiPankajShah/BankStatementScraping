@@ -1,0 +1,30 @@
+<html>
+{% include "sideMenu.html" %}
+
+<head>
+<title>Forms</title>
+
+	
+<style>
+#leftside
+{
+margin-left: 500px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="leftside">
+<h1>How much did you spend on -----------?</h1>
+<form method='POST' action={{url_for('keyword')}}>
+{{form.csrf_token}}
+{{form.keyword.label}}
+{{form.keyword}}
+
+<input type="submit">
+</form>
+</div>
+</body>
+
+</html>
